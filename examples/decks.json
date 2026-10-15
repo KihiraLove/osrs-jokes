@@ -1,0 +1,16 @@
+{
+  // Add any number of decks. Keep each id unique and stable.
+  "decks": [
+    {
+      "id": "general",
+      "name": "General",
+      // Add quoted jokes here, separated by commas. Use \n\n before a punchline.
+      "jokes": []
+    },
+    {
+      "id": "osrs",
+      "name": "OSRS",
+      "jokes": []
+    }
+  ]
+}
