@@ -71,6 +71,27 @@ keeps the previous decks and current card; fix the file and reload again. Files
 are loaded on a background worker, never on the client/render thread. Shutdown
 cancels the worker and discards any stale result.
 
+## Importing collector exports
+
+In [OSRS Jokes Collector](https://github.com/KihiraLove/osrs-jokes-collector),
+sign in, open **Export**, then download selected decks or all decks. Back up
+your existing `.runelite/osrs-jokes/decks.json`, replace it with the downloaded
+file unchanged, then press **Reload decks**. This replaces the whole collection;
+local decks missing from the export will no longer be listed. The plugin does
+not contact the collector or import themes.
+
+Deck names, joke order and internal line breaks are preserved. A collector
+two-part joke is a string with a blank line between setup and punchline.
+Renaming a deck in the collector preserves its ID, so replacing the file and
+reloading keeps that deck selected even if its name/order changes. An exported
+empty deck is valid and draws the normal “No jokes yet” card. A failed reload
+keeps the previously loaded decks and current card, as with hand-written files.
+
+[Generated fixtures and provenance](src/test/resources/collector/README.md)
+cover exact text, names, IDs and renamed selections. The
+[collector verification checklist](https://github.com/KihiraLove/osrs-jokes-collector/blob/main/docs/plugin-compatibility.md)
+records automated results separately from the owner's manual in-game result.
+
 ## Development
 
 Java sources target Java 11. `./gradlew test` runs offline codec, storage, deck,

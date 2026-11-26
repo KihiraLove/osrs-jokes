@@ -1,0 +1,18 @@
+{
+  "decks": [
+    {
+      "id": "10000000-0000-4000-8000-000000000001",
+      "name": "Empty deck",
+      "jokes": []
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000002",
+      "name": "Gielinor \"jokes\" \\ 🦀",
+      "jokes": [
+        "The Wise Old Man said \"bank it\". Path: C:\\Gielinor\\bank.",
+        "Why did the crab cross the shore?\n\nTo say 你好, café! 🦀\nThen scuttle away.",
+        "Keep // this and /* that */ as text.\r\nNext line\twith a tab.\n\nA blank line stays."
+      ]
+    }
+  ]
+}
